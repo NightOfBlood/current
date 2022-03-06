@@ -1,14 +1,9 @@
-package com.georg.model;
+package com.georg.rest;
 
-
-
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
-
-import javax.persistence.Entity;
 import java.time.LocalDate;
 
-@Entity
-public class ElectricityMeterReadingsEntity extends PanacheEntity {
+// Post ElectricityMeterReadings
+public class ElectricityMeterReadings {
     private String address;
     private String fullName;
     private String date;
