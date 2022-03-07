@@ -1,6 +1,7 @@
-package com.georg.rest;
+package com.georg;
 
 import com.georg.model.ElectricityMeterReadingsEntity;
+import com.georg.rest.ElectricityMeterReadings;
 
 public interface ElectricityMeterReadingsResourceInterface {
         //запрос на пол показателей счетчиков по полям

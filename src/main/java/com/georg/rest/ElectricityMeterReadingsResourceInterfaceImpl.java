@@ -1,5 +1,6 @@
 package com.georg.rest;
 
+import com.georg.ElectricityMeterReadingsResourceInterface;
 import com.georg.model.ElectricityMeterReadingsEntity;
 
 import javax.enterprise.context.ApplicationScoped;
