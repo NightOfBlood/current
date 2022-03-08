@@ -1,7 +1,8 @@
-package com.georg.rest;
+package com.georg;
 
 import com.georg.ElectricityMeterReadingsResourceInterface;
 import com.georg.model.ElectricityMeterReadingsEntity;
+import com.georg.rest.ElectricityMeterReadings;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.transaction.Transactional;
@@ -12,9 +13,9 @@ public class ElectricityMeterReadingsResourceInterfaceImpl implements Electricit
     @Transactional
     public ElectricityMeterReadingsEntity get(String address, String fullName, String date) {
         // ищем поля
-        return ElectricityMeterReadingsEntity.<ElectricityMeterReadingsEntity>find("address =" + address + " and "
-                + "fullName=" + fullName + " and "
-                + "date=" + date).firstResult();
+        return ElectricityMeterReadingsEntity.<ElectricityMeterReadingsEntity>find("address ='" + address + "' and "
+                + "fullName='" + fullName + "' and "
+                + "date='" + date+"'").firstResult();
     }
 
     @Override

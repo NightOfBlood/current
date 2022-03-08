@@ -1,6 +1,7 @@
 package com.georg.rest;
 
 import com.georg.ElectricityMeterReadingsResourceInterface;
+import com.georg.ElectricityMeterReadingsResourceInterfaceImpl;
 import com.georg.model.ElectricityMeterReadingsEntity;
 
 import javax.inject.Inject;
@@ -12,9 +13,9 @@ import javax.ws.rs.*;
 //отдает json
 @Produces("application/json")
 //работа с показателями
-public class ElectricityMeterReadingsResource implements ElectricityMeterReadingsResourceInterface {
+public class ElectricityMeterReadingsRest implements ElectricityMeterReadingsResourceInterface {
     @Inject
-    public  ElectricityMeterReadingsResourceInterfaceImpl electricityMeterReadingsResourceInterface;
+    public ElectricityMeterReadingsResourceInterfaceImpl electricityMeterReadingsResourceInterface;
     @Override
     @GET
     //запрос на пол показателей счетчиков по полям
